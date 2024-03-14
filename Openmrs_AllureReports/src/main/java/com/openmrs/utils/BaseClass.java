@@ -15,13 +15,13 @@ public class BaseClass {
 
 	@BeforeTest
 	public WebDriver initialize_driver() throws Throwable {
-		if (Property.getValueForKey("Browser").equalsIgnoreCase("Chrome")) {
+		if (Property.getValueForKey("Browser").equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			tdriver.set(driver);
 			driver.get(Property.getValueForKey("url"));
-		} else if (Property.getValueForKey("Browser").equalsIgnoreCase("Firefox")) {
+		} else if (Property.getValueForKey("Browser").equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

@@ -207,7 +207,7 @@ public class PageElements {
 	}
 
 	// Register a patient
-	@FindBy(xpath = "(//i[@class='icon-user'])[2]")
+	@FindBy(xpath = "//i[@class='icon-user']")
 	WebElement Register;
 
 	// Find Patient Record
@@ -237,7 +237,7 @@ public class PageElements {
 	}
 
 	// Recent Button
-	@FindBy(xpath = "//*[@id=\"patient-search-results-table\"]/tbody/tr[1]/td[1]/span")
+	@FindBy(xpath = "//*[@id='patient-search-results-table']/tbody/tr[1]/td[1]/span")
 	WebElement Recent;
 
 	// Recent Button click

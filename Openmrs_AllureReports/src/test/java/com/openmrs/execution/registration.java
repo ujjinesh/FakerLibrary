@@ -49,6 +49,7 @@ public class registration extends BaseClass{
 		elements.patientrelation(td.getRelationship_type(), td.getPersonName());
 		elements.confirmright();
 		elements.confirmbutton();
+		Thread.sleep(2000);
 		elements.Patientid();
 		elements.HomeIcon();
 		elements.Find_Patient();
